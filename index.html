@@ -9,9 +9,21 @@
       rel="stylesheet"
       href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="./node_modules/" />
     <style>
       .bg-gray {
         background-color: #eee;
+      }
+      .text-rose {
+        color: #ff0077;
+      }
+      .btn-rose {
+        background-color: #ff0066;
+        color: white;
+      }
+      .btn-rose:hover {
+        background-color: #dd0055;
+        color: white;
       }
     </style>
   </head>
@@ -56,8 +68,8 @@
       <div class="row d-flex flex-column flex-md-row">
         <div class="col">
           <div
-            class="border p-5 rounded shadow bg-light"
-            style="min-height: 350px"
+            class="border p-5 rounded shadow-sm bg-light"
+            style="max-height: 350px"
           >
             <span class="text-danger">Get started</span>
             <h2 class="pt-2">
@@ -81,13 +93,43 @@
         </div>
         <div class="col">
           <div
-            class="border rounded shadow bg-light mt-3 mt-md-0 d-flex justify-content-center align-items-center"
+            class="border rounded shadow-sm bg-light mt-3 mt-md-0 d-flex justify-content-center align-items-center"
             style="min-height: 350px"
           >
-            <img class="w-50" src="/assests/imgs/web.jpg" alt="" />
+            <img class="w-50 w-md-75" src="/assests/imgs/web.jpg" alt="" />
           </div>
         </div>
       </div>
     </section>
+    <main class="container mt-4">
+      <div class="rounded bg-light shadow-sm row flex-column flex-md-row">
+        <div class="col-12 col-md-4">
+          <div class="p-5">
+            <p class="text-rose">Our Features</p>
+            <h2>
+              Expected <br />
+              Features.
+            </h2>
+            <small>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </small>
+            <br />
+            <button class="btn btn-rose px-4 py-1 rounded-4 mt-3">
+              View Features
+            </button>
+          </div>
+        </div>
+        <div class="col-12 col-md-8">
+          <div class="row">
+            <div class="col-6 col-md-4"></div>
+            <div class="col-6 col-md-4"></div>
+            <div class="col-6 col-md-4"></div>
+            <div class="col-6 col-md-4"></div>
+            <div class="col-6 col-md-4"></div>
+            <div class="col-6 col-md-4"></div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
