@@ -9,7 +9,21 @@
       rel="stylesheet"
       href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="./node_modules/" />
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <!-- slick carousel cdn link-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
     <style>
       .bg-gray {
         background-color: #eee;
@@ -21,9 +35,40 @@
         background-color: #ff0066;
         color: white;
       }
+      .btn-pink {
+        background-color: #a600c7;
+        color: white;
+      }
       .btn-rose:hover {
         background-color: #dd0055;
         color: white;
+      }
+      .btn-pink:hover {
+        background-color: #8c00a8;
+        color: white;
+      }
+      .hover-ty {
+        transition: 0.25s;
+      }
+      .hover-ty:hover {
+        transform: translateY(-10px);
+      }
+      .hover-scale {
+        transition: 0.25s;
+      }
+      .hover-scale:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+      }
+      .relative {
+        position: relative;
+      }
+      .absolute {
+        position: absolute;
+        top: 40%;
+      }
+      .pointer {
+        cursor: pointer;
       }
     </style>
   </head>
@@ -65,12 +110,9 @@
     </nav>
 
     <section class="container mt-5">
-      <div class="row d-flex flex-column flex-md-row">
-        <div class="col">
-          <div
-            class="border p-5 rounded shadow-sm bg-light"
-            style="max-height: 350px"
-          >
+      <div class="row flex-column flex-md-row">
+        <div class="col-12 col-lg-6 p-5">
+          <div class="" style="max-height: 350px">
             <span class="text-danger">Get started</span>
             <h2 class="pt-2">
               Make More Time <br />
@@ -82,54 +124,293 @@
               Eligendi facere animi minima.
             </small>
             <div class="mt-3 d-flex">
-              <button class="btn btn-danger py-1 px-3 px-lg-5 rounded-5 me-2">
+              <button
+                class="btn btn-danger rounded-5 me-2"
+                style="width: 200px"
+              >
                 View Item
               </button>
-              <button class="btn btn-success py-1 px-3 px-lg-5 rounded-5">
+              <button class="btn btn-success rounded-5" style="width: 200px">
                 Call Now
               </button>
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-12 col-lg-6">
           <div
-            class="border rounded shadow-sm bg-light mt-3 mt-md-0 d-flex justify-content-center align-items-center"
+            class="d-flex justify-content-center align-items-center"
             style="min-height: 350px"
           >
-            <img class="w-50 w-md-75" src="/assests/imgs/web.jpg" alt="" />
+            <img class="w-75" src="./assests/imgs/web.webp" alt="" />
           </div>
         </div>
       </div>
     </section>
-    <main class="container mt-4">
-      <div class="rounded bg-light shadow-sm row flex-column flex-md-row">
-        <div class="col-12 col-md-4">
-          <div class="p-5">
+    <!-- end section  -->
+    <main class="container mt-3">
+      <div class="row flex-column flex-lg-row">
+        <div class="col-12 col-lg-4">
+          <div class="p-5 border bg-light rounded-3" style="height: 408px">
             <p class="text-rose">Our Features</p>
             <h2>
               Expected <br />
               Features.
             </h2>
             <small>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio
+              autem quibusdam asperiores amet voluptate, nobis tempora, repellat
+              corrupti unde quo dignissimos voluptatum doloribus cumque cum
+              placeat id.
             </small>
             <br />
-            <button class="btn btn-rose px-4 py-1 rounded-4 mt-3">
+            <button class="btn btn-rose rounded-5 mt-4" style="width: 200px">
               View Features
             </button>
           </div>
         </div>
-        <div class="col-12 col-md-8">
-          <div class="row">
-            <div class="col-6 col-md-4"></div>
-            <div class="col-6 col-md-4"></div>
-            <div class="col-6 col-md-4"></div>
-            <div class="col-6 col-md-4"></div>
-            <div class="col-6 col-md-4"></div>
-            <div class="col-6 col-md-4"></div>
+        <div class="col-12 col-lg-8 mt-3 mt-lg-0">
+          <div class="row g-3">
+            <div class="col-12 col-lg-4">
+              <div class="bg-white border rounded-3 hover-ty">
+                <div class="text-center p-4">
+                  <i
+                    class="fas fa-message p-3 border rounded-circle btn btn-rose shadow"
+                  ></i>
+                </div>
+                <h5 class="text-center">Customer Support</h5>
+                <p class="text-center text-secondary my-4">
+                  Contact Our Best Services
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="bg-white border rounded-3 hover-ty">
+                <div class="text-center p-4">
+                  <i
+                    class="fas fa-home p-3 border rounded-circle btn btn-success shadow"
+                  ></i>
+                </div>
+                <h5 class="text-center">Home Services</h5>
+                <p class="text-center text-secondary my-4">
+                  Contact Our Best Services
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="bg-white border rounded-3 hover-ty">
+                <div class="text-center p-4">
+                  <i
+                    class="fas fa-plane p-3 border rounded-circle btn btn-warning shadow"
+                  ></i>
+                </div>
+                <h5 class="text-center">Internationl Services</h5>
+                <p class="text-center text-secondary my-4">
+                  Contact Our Best Services
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="bg-white border rounded-3 hover-ty">
+                <div class="text-center p-4">
+                  <i
+                    class="fas fa-search p-3 border rounded-circle btn btn-info shadow"
+                  ></i>
+                </div>
+                <h5 class="text-center">Search Services</h5>
+                <p class="text-center text-secondary my-4">
+                  Contact Our Best Services
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="bg-white border rounded-3 hover-ty">
+                <div class="text-center p-4">
+                  <i
+                    class="fas fa-chart-line p-3 border rounded-circle btn btn-primary shadow"
+                  ></i>
+                </div>
+                <h5 class="text-center">Estimate Services</h5>
+                <p class="text-center text-secondary my-4">
+                  Contact Our Best Services
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="bg-white border rounded-3 hover-ty">
+                <div class="text-center p-4">
+                  <i
+                    class="fab fa-twitter p-3 border rounded-circle btn btn-secondary shadow"
+                  ></i>
+                </div>
+                <h5 class="text-center">Contact Twitter</h5>
+                <p class="text-center text-secondary my-4">
+                  Contact Our Best Services
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </main>
+    <!-- end main  -->
+    <aside class="container mt-5">
+      <div class="row flex-column flex-lg-row">
+        <div class="col-12 col-lg-6 p-5">
+          <div class="d-flex justify-content-center relative">
+            <img
+              class="w-100 rounded-3 hover-scale"
+              src="./assests/imgs/laptop-from-above.jpg"
+              alt=""
+            />
+            <span
+              class="btn btn-secondary d-flex justify-content-center align-items-center rounded-circle opacity-75 absolute"
+              style="width: 50px; height: 50px"
+              ><i class="fas fa-play fa-lg px-2"></i
+            ></span>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 p-5">
+          <div class="">
+            <p class="text-rose">Watch Video</p>
+            <h2>
+              Consulting Trade
+              <br />
+              Easier Than Ever
+            </h2>
+            <p class="text-secondary">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              <br />
+              Veniam, dolorum? Amet quos quibusdam eum exercitationem
+              praesentium provident.
+            </p>
+            <div class="d-flex pt-2">
+              <button class="btn btn-rose rounded-5 me-3" style="width: 200px">
+                Watch More
+              </button>
+              <button class="btn btn-pink rounded-5" style="width: 200px">
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- end aside  -->
+    <div class="container">
+      <div class="row p-5">
+        <div class="col-12 col-lg-8">
+          <p class="text-rose">Portfolio</p>
+          <h2>The World with Are Proud Of</h2>
+        </div>
+        <div class="col-12 col-lg-4">
+          <p class="text-secondary">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia
+            corporis, accusantium eum distinctio suscipit praesentium.
+          </p>
+        </div>
+      </div>
+      <div class="row px-5">
+        <div class="col">
+          <div class="">
+            <div class="portfolio d-flex">
+              <div class="p-3" style="width: 250px">
+                <img
+                  class="w-100 rounded-4 shadow hover-ty pointer"
+                  src="./assests/imgs/hang-bag.jpg"
+                  alt=""
+                />
+                <h5 class="mt-3">Hang Bag One</h5>
+                <small>Click Card To Add</small>
+              </div>
+              <div class="p-3" style="width: 250px">
+                <img
+                  class="w-100 rounded-4 shadow hover-ty pointer"
+                  src="./assests/imgs/hand-bag1.jpg"
+                  alt=""
+                />
+                <h5 class="mt-3">Hang Bag Two</h5>
+                <small>Click Card To Add</small>
+              </div>
+              <div class="p-3" style="width: 250px">
+                <img
+                  class="w-100 rounded-4 shadow hover-ty pointer"
+                  src="./assests/imgs/hand-bag2.jpg"
+                  alt=""
+                />
+                <h5 class="mt-3">Hang Bag Three</h5>
+                <small>Click Card To Add</small>
+              </div>
+              <div class="p-3" style="width: 250px">
+                <img
+                  class="w-100 rounded-4 shadow hover-ty pointer"
+                  src="./assests/imgs/hang-bag3.webp"
+                  alt=""
+                />
+                <h5 class="mt-3">Hang Bag Four</h5>
+                <small>Click Card To Add</small>
+              </div>
+              <div class="p-3" style="width: 250px">
+                <img
+                  class="w-100 rounded-4 shadow hover-ty pointer"
+                  src="./assests/imgs/hang-bag4.webp"
+                  alt=""
+                />
+                <h5 class="mt-3">Hang Bag Five</h5>
+                <small>Click Card To Add</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jquery js link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script>
+
+    <!-- slick carousel js link  -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".portfolio").slick({
+          dots: true,
+          infinite: false,
+          speed: 300,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ],
+        });
+      });
+    </script>
   </body>
 </html>
