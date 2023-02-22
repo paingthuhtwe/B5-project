@@ -40,6 +40,11 @@
   position: absolute;
   top: 40%;
 }
+.absolute-comment {
+  position: absolute;
+  left: 20%;
+  top: 7%;
+}
 .pointer {
   cursor: pointer;
 }
