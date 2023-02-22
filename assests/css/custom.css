@@ -4,9 +4,18 @@
 .text-rose {
   color: #ff0077;
 }
+.bg-rose {
+  background-color: #ff0077;
+}
+.bg-pink {
+  background-color: #a600c7;
+}
 .btn-rose {
   background-color: #ff0066;
   color: white;
+}
+.text-pink {
+  color: #a600c7;
 }
 .btn-pink {
   background-color: #a600c7;
@@ -55,4 +64,7 @@
   color: #ff0077;
   transform: scale(1.2);
   transition: 0.25s;
+}
+#planB {
+  transform: scale(1.1);
 }
