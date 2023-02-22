@@ -81,3 +81,16 @@
   background-color: #fff;
   cursor: pointer;
 }
+.hover-ef {
+  transition: 0.5s;
+  font: 1.2em sans-serif;
+}
+.hover-ef:hover {
+  transform: translateY(-5px);
+  transition: 0.25s;
+  font-weight: 600;
+  cursor: pointer;
+}
+.slack {
+  font: sans-serif;
+}

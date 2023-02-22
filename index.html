@@ -27,9 +27,17 @@
     <link rel="stylesheet" href="./assests/css/custom.css" />
   </head>
   <body class="bg-gray">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light shadow-sm">
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary bg-light shadow-sm py-3"
+    >
       <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a
+          class="text-pink d-flex justify-content-center align-items-center text-decoration-none"
+          href="#"
+        >
+          <i class="fab fa-slack fa-3x"></i>
+          <h3 class="fw-bold m-0 ps-2 slack">Slack</h3>
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -42,28 +50,39 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 mt-3 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link hover-ef" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item px-lg-2">
+              <a class="nav-link hover-ef" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link hover-ef" href="#services">Services</a>
+            </li>
+            <li class="nav-item px-lg-2">
+              <a class="nav-link hover-ef" href="#team">Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Services</a>
+              <a class="nav-link hover-ef" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Contact</a>
+              <a class="nav-link hover-ef px-lg-2" href="#contact">Contact</a>
             </li>
           </ul>
+          <div class="d-flex">
+            <input id="search" class="form-control rounded-5" type="text" />
+            <label for="search" class="btn btn-pink rounded-5 px-4 ms-2">
+              Search
+            </label>
+          </div>
         </div>
       </div>
     </nav>
 
-    <section class="container mt-5">
+    <section class="container mt-5" id="home">
       <div class="row flex-column flex-md-row">
         <div class="col-12 col-lg-6 p-5">
           <div class="" style="max-height: 350px">
@@ -101,7 +120,7 @@
       </div>
     </section>
     <!-- end section  -->
-    <main class="container mt-3">
+    <main class="container mt-3" id="features">
       <div class="row flex-column flex-lg-row">
         <div class="col-12 col-lg-4">
           <div class="p-5 border bg-light rounded-3" style="height: 408px">
@@ -207,7 +226,7 @@
       </div>
     </main>
     <!-- end main  -->
-    <aside class="container mt-5">
+    <aside class="container mt-5" id="services">
       <div class="row flex-column flex-lg-row">
         <div class="col-12 col-lg-6 p-5">
           <div class="d-flex justify-content-center relative">
@@ -259,7 +278,7 @@
       </div>
     </aside>
     <!-- end aside  -->
-    <div class="container">
+    <div class="container" id="portfolio">
       <div class="row p-5">
         <div class="col-12 col-lg-8">
           <p class="text-rose">Portfolio</p>
@@ -328,7 +347,7 @@
     </div>
 
     <!-- team section  -->
-    <div class="container">
+    <div class="container" id="team">
       <div class="text-center pt-5">
         <p class="text-rose">Our Team</p>
         <h2>Meet Our Team Of Experts</h2>
@@ -836,7 +855,7 @@
       </div>
     </div>
     <!-- end contact section  -->
-    <div class="container">
+    <div class="container" id="contact">
       <div class="text-center p-2">
         <h2 class="lh-base">
           App Is Avaliable For Free
@@ -885,5 +904,7 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
     ></script>
     <script src="./assests/js/main.js"></script>
+    <!-- bootstrap js cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
   </body>
 </html>
