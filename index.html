@@ -24,53 +24,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
     />
-    <style>
-      .bg-gray {
-        background-color: #eee;
-      }
-      .text-rose {
-        color: #ff0077;
-      }
-      .btn-rose {
-        background-color: #ff0066;
-        color: white;
-      }
-      .btn-pink {
-        background-color: #a600c7;
-        color: white;
-      }
-      .btn-rose:hover {
-        background-color: #dd0055;
-        color: white;
-      }
-      .btn-pink:hover {
-        background-color: #8c00a8;
-        color: white;
-      }
-      .hover-ty {
-        transition: 0.25s;
-      }
-      .hover-ty:hover {
-        transform: translateY(-10px);
-      }
-      .hover-scale {
-        transition: 0.25s;
-      }
-      .hover-scale:hover {
-        transform: scale(1.05);
-        cursor: pointer;
-      }
-      .relative {
-        position: relative;
-      }
-      .absolute {
-        position: absolute;
-        top: 40%;
-      }
-      .pointer {
-        cursor: pointer;
-      }
-    </style>
+    <link rel="stylesheet" href="./assests/css/custom.css" />
   </head>
   <body class="bg-gray">
     <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light shadow-sm">
@@ -373,44 +327,6 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
     ></script>
-    <script>
-      $(document).ready(function () {
-        $(".portfolio").slick({
-          dots: true,
-          infinite: false,
-          speed: 300,
-          slidesToShow: 4,
-          slidesToScroll: 4,
-          responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true,
-              },
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-              },
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-              },
-            },
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-          ],
-        });
-      });
-    </script>
+    <script src="./assests/js/main.js"></script>
   </body>
 </html>

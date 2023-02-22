@@ -1,0 +1,45 @@
+.bg-gray {
+  background-color: #eee;
+}
+.text-rose {
+  color: #ff0077;
+}
+.btn-rose {
+  background-color: #ff0066;
+  color: white;
+}
+.btn-pink {
+  background-color: #a600c7;
+  color: white;
+}
+.btn-rose:hover {
+  background-color: #dd0055;
+  color: white;
+}
+.btn-pink:hover {
+  background-color: #8c00a8;
+  color: white;
+}
+.hover-ty {
+  transition: 0.25s;
+}
+.hover-ty:hover {
+  transform: translateY(-10px);
+}
+.hover-scale {
+  transition: 0.25s;
+}
+.hover-scale:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+  top: 40%;
+}
+.pointer {
+  cursor: pointer;
+}
