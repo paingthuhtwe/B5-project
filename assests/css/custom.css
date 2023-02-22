@@ -43,3 +43,11 @@
 .pointer {
   cursor: pointer;
 }
+.hover-color {
+  transition: 0.25s;
+}
+.hover-color:hover {
+  color: #ff0077;
+  transform: scale(1.2);
+  transition: 0.25s;
+}
