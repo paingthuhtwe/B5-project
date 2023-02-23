@@ -51,8 +51,8 @@
 }
 .absolute-comment {
   position: absolute;
-  left: 20%;
-  top: 7%;
+  left: 10%;
+  top: -12%;
 }
 .pointer {
   cursor: pointer;
