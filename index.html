@@ -27,10 +27,16 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
     />
     <link rel="stylesheet" href="./assests/css/custom.css" />
+    <!-- animate.style cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body class="bg-gray">
     <nav
-      class="navbar navbar-expand-lg bg-body-tertiary bg-light shadow-sm py-3"
+      class="navbar navbar-expand-lg bg-body-tertiary bg-light shadow-sm py-3 animate__animated"
+      id="nav"
     >
       <div class="container">
         <a
@@ -347,7 +353,6 @@
         </div>
       </div>
     </div>
-
     <!-- team section  -->
     <div class="container" id="team">
       <div class="text-center pt-5">
@@ -476,7 +481,7 @@
         <!-- break  -->
       </div>
     </div>
-    <div class="container">
+    <div class="container" id="testimonial">
       <div class="text-center">
         <p class="text-rose">Testimonial</p>
         <h2 class="lh-base">
@@ -584,7 +589,7 @@
       </div>
     </div>
     <!-- end comment section  -->
-    <div class="container">
+    <div class="container" id="pricing">
       <div class="text-center">
         <p class="text-pink">Pricing Table</p>
         <h2 class="lh-base">
@@ -769,7 +774,7 @@
       </div>
     </div>
     <!-- end pricing table  -->
-    <div class="container">
+    <div class="container" id="contact">
       <div class="row py-5">
         <div class="col-12 col-lg-4 p-3">
           <div class="px-3">
@@ -862,7 +867,7 @@
       </div>
     </div>
     <!-- end contact section  -->
-    <div class="container" id="contact">
+    <div class="container" id="download">
       <div class="text-center p-2">
         <h2 class="lh-base">
           App Is Avaliable For Free
@@ -901,6 +906,16 @@
         </div>
       </div>
     </div>
+    <a
+      href="#home"
+      class="text-white text-decoration-none d-none animate__animated"
+      id="toTop"
+      ><div
+        class="btn btn-rose rounded-circle d-flex align-items-center justify-content-center shadow"
+        style="width: 50px; height: 50px"
+      >
+        <i class="fas fa-arrow-up fa-lg"></i></div
+    ></a>
     <!-- jquery js link  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script>
@@ -911,6 +926,9 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
     ></script>
     <script src="./assests/js/main.js"></script>
+    <!-- waypoint js cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <script src="./assests/js/waypoint.js"></script>
     <!-- bootstrap js cdn link  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
   </body>

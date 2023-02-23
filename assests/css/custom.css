@@ -94,3 +94,28 @@
 .slack {
   font: sans-serif;
 }
+.navbar-control {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+#toTop {
+  position: fixed;
+  right: 7.5%;
+  bottom: 10%;
+  animation: bounceMe 2s infinite;
+}
+
+@keyframes bounceMe {
+  0% {
+    transform: translateY(40px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(40px);
+  }
+}
