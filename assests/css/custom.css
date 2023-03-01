@@ -122,3 +122,17 @@
 #mainTheme {
   transition: 0.5s;
 }
+
+/* slick  */
+.slick-prev::before {
+  content: "\2039";
+  font-size: 3rem;
+  font-family: "Font Awesome 6 Pro";
+  color: var(--pdf-rose-600);
+}
+.slick-next::before {
+  content: "\203a";
+  font-size: 3rem;
+  font-family: "Font Awesome 6 Pro";
+  color: var(--pdf-rose-600);
+}

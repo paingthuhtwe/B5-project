@@ -18,9 +18,8 @@ ScrollReveal({
 ScrollReveal({
   origin: "bottom",
   duration: 1500,
-  distance: "100px",
+  // distance: "0",
   scale: 0.75,
-  viewFactor: 0.5,
   reset: true,
 }).reveal(".sBottom", {
   interval: 100,
