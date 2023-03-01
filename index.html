@@ -87,6 +87,32 @@
             <label for="search" class="btn btn-pink rounded-5 px-4 ms-2">
               Search
             </label>
+            <!-- start dark mode control section  -->
+            <div class="btn-group ms-2">
+              <button
+                type="button"
+                class="btn btn-light dropdown-toggle border"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                id="btnTheme"
+              >
+                <i class="fas fa-sun" id="mainTheme"></i>
+              </button>
+              <ul
+                class="dropdown-menu dropdown-menu-end px-2"
+                id="dropdownTheme"
+              >
+                <li class="dropdown-item active rounded-2" id="dayTheme">
+                  <i class="fas fa-sun"></i>
+                  <span class="ps-2">Day</span>
+                </li>
+                <li class="dropdown-item rounded-2" id="nightTheme">
+                  <i class="fas fa-moon px-1"></i>
+                  <span class="ps-1">Night</span>
+                </li>
+              </ul>
+            </div>
+            <!-- end dark mode control section  -->
           </div>
         </div>
       </div>
@@ -953,6 +979,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <script src="./assests/js/waypoint.js"></script>
     <!-- bootstrap js cdn link  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+    <!-- theme js link  -->
+    <script src="assests/js/theme.js"></script>
   </body>
 </html>

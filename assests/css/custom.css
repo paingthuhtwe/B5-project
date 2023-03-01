@@ -119,3 +119,7 @@
     transform: translateY(40px);
   }
 }
+
+#mainTheme {
+  transition: 0.5s;
+}
