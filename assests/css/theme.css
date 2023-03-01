@@ -52,5 +52,5 @@ body {
   color: #d400ff !important;
 }
 .navbar-toggler {
-  border-color: #aaa;
+  background-color: var(--pdf-slate-800) !important;
 }
