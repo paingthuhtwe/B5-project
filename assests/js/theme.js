@@ -1,6 +1,7 @@
 const day = document.querySelector("#dayTheme");
 const night = document.querySelector("#nightTheme");
 const mainTheme = document.querySelector("#mainTheme");
+const themeCss = document.querySelector("#themeCss");
 const btnTheme = document.querySelector("#btnTheme");
 const dropdownTheme = document.querySelector("#dropdownTheme");
 const body = document.querySelector("html");
@@ -27,6 +28,8 @@ function themeControl() {
       day.classList.add("active");
       mainTheme.classList.remove("fa-moon");
       mainTheme.classList.add("fa-sun");
+      body.setAttribute("data-theme", "light");
+      themeCss.setAttribute("href", "");
     } else if (theme == "dark") {
       btnTheme.classList.remove("btn-light");
       btnTheme.classList.add("btn-dark");
@@ -35,6 +38,8 @@ function themeControl() {
       night.classList.add("active");
       mainTheme.classList.remove("fa-sun");
       mainTheme.classList.add("fa-moon");
+      body.setAttribute("data-theme", "dark");
+      themeCss.setAttribute("href", "assests/css/theme.css");
     }
   }
 }

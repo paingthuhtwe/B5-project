@@ -39,7 +39,7 @@
   transition: 0.25s;
 }
 .hover-scale:hover {
-  transform: scale(1.05);
+  transform: scale(1.025);
   cursor: pointer;
 }
 .relative {
@@ -62,7 +62,7 @@
 }
 .hover-color:hover {
   color: #ff0077;
-  transform: scale(1.2);
+  transform: scale(1.05);
   transition: 0.25s;
 }
 #planB {
@@ -86,9 +86,8 @@
   font: 1.2em sans-serif;
 }
 .hover-ef:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
   transition: 0.25s;
-  font-weight: 600;
   cursor: pointer;
 }
 .slack {
