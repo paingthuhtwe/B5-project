@@ -136,3 +136,14 @@
   font-family: "Font Awesome 6 Pro";
   color: var(--pdf-rose-600);
 }
+
+/* loading page  */
+.loading {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
