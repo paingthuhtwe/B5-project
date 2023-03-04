@@ -1,5 +1,7 @@
 # b5-project
 
+run "npm install"
+
 live demo link
 
-https://paingthuhtwe.github.io/Slack-B5-Project/
+https://slack-b5.netlify.app
