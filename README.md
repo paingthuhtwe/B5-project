@@ -2,4 +2,4 @@
 
 live demo link
 
-https://paingthuhtwe.github.io/b5-project/
+https://paingthuhtwe.github.io/Slack-B5-Project/
