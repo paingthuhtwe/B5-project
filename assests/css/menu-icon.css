@@ -43,7 +43,8 @@
 }
 
 .navbar-toggler {
-  background-color: var(--pdf-slate-200);
+  background-color: none;
+  border: none;
 }
 .navbar-toggler:focus {
   outline: none;
